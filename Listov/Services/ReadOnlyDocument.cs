@@ -8,10 +8,5 @@
         public ReadOnlyDocument(string path) : base(path)
         {
         }
-
-        public override void Save()
-        {
-            throw new Exception("This file is read-only");
-        }
     }
 }

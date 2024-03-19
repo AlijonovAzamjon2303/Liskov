@@ -13,11 +13,7 @@
         {
             this.data = File.ReadAllText(path);
         }
-        public virtual void Save()
-        {
-            this.data += DateTime.Now.ToString();
-            File.WriteAllText(path, data);
-        }
+       
         private void CheckExists()
         {
             if (!File.Exists(path))
